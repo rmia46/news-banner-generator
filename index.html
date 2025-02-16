@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bn-BD">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Banner Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="form-section">
+        <h2>News Banner Generator</h2>
+        <form id="banner-form">
+            <!-- Uncomment below line if you want to add a news provider name -->
+            <!-- <input type="text" id="provider-name" placeholder="" required> -->
+            <label for="mews-date">Date</label>
+            <input type="date" id="news-date" required>
+            <label for="image-upload">Image</label>
+            <input type="file" id="image-upload" accept="image/*" required>
+            <label for="news-title">News Title</label>
+            <input type="text" id="news-title" placeholder="News Title" required>
+            <button type="button" onclick="updatePreview()">Generate Preview</button>
+            <p id="author">Created by Roman</p>
+        </form>
+    </div>
+
+    <div class="preview-section">
+        <h2>Preview</h2>
+        <div class="banner-preview" id="banner">
+            <div class="header">
+                <span id="preview-provider"><img id="logo-img" src="img/balaka-logo.png"></span>
+                <span id="preview-date">2023-08-20</span>
+            </div>
+            <div class="image-container">
+                <img id="preview-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Preview">
+            </div>
+            <div class="news-title" id="preview-title">News Title Here</div>
+        </div>
+        <button id="download-btn" onclick="downloadBanner()">Download Banner</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

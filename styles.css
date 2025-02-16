@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Li Alinur Banglaborno';
+    src: url('fonts/LiAlinurBanglaborno.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Li Alinur Banglaborno', Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+    background-image: url("img/news-bg.png");
+    display: flex;
+    gap: 30px;
+}
+
+.form-section {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#logo-img {
+    width: 407px;
+    height: auto;
+}
+.preview-section {
+    flex-grow: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.banner-preview {
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+    background: white;
+    background-image: url("img/news-bg.png");
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+    font-size: 24px;
+}
+
+.image-container {
+    width: 900px;
+    height: 600px;
+    margin: 20px auto;
+    margin-bottom: 0;
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+#preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+#preview-date {
+    font-family: 'Li Alinur Banglaborno', Arial, sans-serif;
+    font-size: 30px;
+    margin: 20px;
+    margin-left: none;
+}
+
+.news-title {
+    font-family: 'Li Alinur Banglaborno', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 100%;
+    height: 200px;
+}
+
+input, button {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#download-btn {
+    margin-left: 40%;
+    margin-top: 20px;
+    width: auto;
+    padding: 10px 30px;
+}
