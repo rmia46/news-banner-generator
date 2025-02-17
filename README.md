@@ -1,2 +1,2 @@
-# news-banner-generator
-This is a simple news banner generator.
+# Easy News Banner
+This is a simple news banner generator. It's for client so theere's no option to change the directly. You can fork it and change anyting as your need.
